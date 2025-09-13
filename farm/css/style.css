@@ -1,5 +1,9 @@
 @charset "utf-8";
 
+html{
+    font-size:16px;
+}
+
 body{
     color:#333333;
     font-family:"arial Black","HG丸ｺﾞｼｯｸM-PRO",sans-serif;
@@ -34,4 +38,75 @@ a{
 }
 div{
     display:flex;
+    justify-content:space-between;
+    width:1240px;
+    margin:0 auto 50px;
+}
+main{
+    flex-basis:920px;
+    background-color:#ffffff;
+    border-radius:16px;
+    padding:62px 72px 32px 72px;
+    box-shadow:0px 0px 10px 10px #dddddd;
+}
+aside{
+    flex-basis:284px;
+}
+aside nav{
+    background-color:#ffffff;
+    border-radius:16px;
+    padding:30px 20px;
+    box-shadow:0px 0px 10px 10px #dddddd;
+    margin-bottom:26px;
+}
+aside nav h2{
+    margin-bottom:18px;
+    font-size:1.5rem;
+    font-weight:bold;
+    color:#633811;
+}
+aside nav ul{
+    font-size:1.2rem;
+}
+.categoryNav ul li{
+    list-style-type:circle;
+    color:#633811;
+    margin:0 0 16px 20px;
+}
+.recentNav ul li{
+    border-bottom:1px solid #633811;
+    padding-bottom:10px;
+    margin-bottom:20px;
+}
+
+
+/* 640以下 */
+
+@media screen and (max-width:640px){
+html{
+    font-size:13px;
+}
+    header{
+    /*background-color:#dbf5d4;*/
+    width:100%;
+}
+    h1{
+    text-align:left;
+    padding:20px 0 16px;
+}
+
+    main{
+      margin-left:16px;
+      margin-right:16px;
+      margin-bottom:30px;
+    }
+    aside{
+      margin-left:16px;
+      margin-right:16px;
+      margin-bottom:30px;
+    }
+    div{
+        display:block;
+        width:100%;
+    }
 }
